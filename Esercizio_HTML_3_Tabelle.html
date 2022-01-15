@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio HTML 3 | Tabelle</title>
+</head>
+<style>
+    caption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    }
+    .mesenome {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        background-color: rgb(65, 65, 65);
+        color: ghostwhite;
+        padding: 20px 10px;
+    }
+    .mese {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        background-color: darkgrey;
+        padding: 10px;
+}
+    .entratetitolo {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        background-color: rgb(181, 255, 197);
+        padding: 20px 10px;
+    }
+
+    .uscitetitolo {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        background-color: rgb(255, 181, 181);
+        padding: 20px 10px;
+    }
+    
+    .entrate {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        background-color: rgb(181, 255, 197);
+        text-align: center;
+    }
+    .uscite {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        background-color: rgb(255, 181, 181);
+        text-align: center;
+    }
+
+    .totale{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        text-align: right;
+        background-color: rgb(65, 23, 23);
+        color: ghostwhite;
+        padding: 20px 10px;
+    }
+
+    .entratelast {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        background-color: rgb(33, 46, 36);
+        text-align: center;
+        color: ghostwhite;
+    }
+    .uscitelast {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        background-color: rgb(92, 25, 25);
+        text-align: center;
+        color: ghostwhite;
+    }
+</style>
+<body>
+
+  <div>
+ <table>
+     <caption> Le Mie Finanze </caption>
+     <colgroup>
+     <col style="background-color: gray;">
+     <col style="background-color: rgb(162, 236, 202);">
+     <col style="background-color: rgb(236, 162, 162);">
+    </colgroup>
+     <thead>
+         <tr>
+             <th>MESE CORRENTE</th>
+             <th>ENTRATE</th>
+             <th>USCITE</th>
+         </tr>
+     </thead>
+     <tbody>
+         <tr>
+             <td>GENNAIO</td>
+             <td>00,00€</td>
+             <td>00,00€</td>
+         </tr>
+         <tr>
+            <td>FEBBRAIO</td>
+            <td>00,00€</td>
+            <td>00,00€</td>
+        </tr>
+        <tr>
+            <td>MARZO</td>
+            <td>00,00€</td>
+            <td>00,00€</td>
+        </tr>
+        <tr>
+            <td>APRILE</td>
+            <td>00,00€</td>
+            <td>00,00€</td>
+        </tr>
+        <tr>
+            <td>MAGGIO</td>
+            <td>00,00€</td>
+            <td>00,00€</td>
+        </tr>
+        <tr>
+            <td>GIUGNO</td>
+            <td>00,00€</td>
+            <td>00,00€</td>
+        </tr>
+        <tr>
+            <td>LUGLIO</td>
+            <td>00,00€</td>
+            <td>00,00€</td>
+        </tr>
+        <tr>
+            <td>AGOSTO</td>
+            <td>00,00€</td>
+            <td>00,00€</td>
+        </tr>
+        <tr>
+            <td>SETTEMBRE</td>
+            <td>00,00€</td>
+            <td>00,00€</td>
+        </tr>
+        <tr>
+            <td>OTTOBRE</td>
+            <td>00,00€</td>
+            <td>00,00€</td>
+        </tr>
+        <tr>
+            <td>NOVEMBRE</td>
+            <td>00,00€</td>
+            <td>00,00€</td>
+        </tr>
+        <tr>
+            <td>DICEMBRE</td>
+            <td>00,00€</td>
+            <td>00,00€</td>
+        </tr>
+        <tr>
+            <td>TOTALE</td>
+            <td>00,00€</td>
+            <td>00,00€</td>
+        </tr>
+     </tbody>
+ </table>
+  </div>
+<br>
+<br>
+  <div>
+    <table>
+        <caption>Le mie Finanze versione CSS</caption>
+        <tbody>
+        <tr>
+        <td class="mesenome">MESE CORRENTE</td>
+        <td class="entratetitolo">ENTRATE</td>
+        <td class="uscitetitolo">USCITE</td>
+        </tr>
+        <tr>
+        <td class="mese">GENNAIO</td>
+        <td class="entrate">00,0€</td>
+        <td class="uscite">00,0€</td>
+        </tr>
+        <tr>
+        <td class="mese">FEBBRAIO</td>
+        <td class="entrate">00,0€</td>
+        <td class="uscite">00,0€</td>
+        </tr>
+        <tr>
+        <td class="mese">MARZO</td>
+        <td class="entrate">00,0€</td>
+        <td class="uscite">00,0€</td>
+        </tr>
+        <tr>
+        <td class="mese">APRILE</td>
+        <td class="entrate">00,0€</td>
+        <td class="uscite">00,0€</td>
+        </tr>
+        <tr>
+        <td class="mese">MAGGIO</td>
+        <td class="entrate">00,0€</td>
+        <td class="uscite">00,0€</td>
+        </tr>
+        <tr>
+        <td class="mese">GIUGNO</td>
+        <td class="entrate">00,0€</td>
+        <td class="uscite">00,0€</td>
+        </tr>
+        <tr>
+        <td class="mese">LUGLIO</td>
+        <td class="entrate">00,0€</td>
+        <td class="uscite">00,0€</td>
+        </tr>
+        <tr>
+        <td class="mese">AGOSTO</td>
+        <td class="entrate">00,0€</td>
+        <td class="uscite">00,0€</td>
+        </tr>
+        <tr>
+        <td class="mese">SETTEMBRE</td>
+        <td class="entrate">00,0€</td>
+        <td class="uscite">00,0€</td>
+        </tr>
+        <tr>
+        <td class="mese">OTTOBRE</td>
+        <td class="entrate">00,0€</td>
+        <td class="uscite">00,0€</td>
+        </tr>
+        <tr>
+        <td class="mese">NOVEMBRE</td>
+        <td class="entrate">00,0€</td>
+        <td class="uscite">00,0€</td>
+        </tr>
+        <tr>
+        <td class="mese">DICEMBRE</td>
+        <td class="entrate">00,0€</td>
+        <td class="uscite">00,0€</td>
+        </tr>
+        <tr>
+        <td class="totale">Totale</td>
+        <td class="entratelast">00,0€</td>
+        <td class="uscitelast">00,0€</td>
+        </tr>
+        </tbody>
+    </table>
+  </div>
+</body>
+</html>
