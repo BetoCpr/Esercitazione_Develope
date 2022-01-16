@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compila il Form</title>
+</head>
+<body>
+    <form>
+        <div>
+          <h2>Complila il Form</h2>
+          <p><i>I campi con * sono da considerarsi obbbligatori</i></p>
+        </div>
+        <br>
+        <div>
+          <strong><label for="email">E-Mail*:</label></strong>
+          <br>
+          <input type="email" id="email" name="email" required> 
+        </div>
+        <br>
+        <div>
+          <strong><label for="pass">Password* (minimo 6 caratteri alfanumerici):</label></strong>
+          <br>
+          <input type="password" id="pass" name="password" minlength="6" required>
+        </div>
+        <br>
+        <div>
+          <strong><label for="namesur">Nome e Cognome*:</label></strong>
+          <br>
+          <input type="text" id="namesur" name="namesur" required>
+        </div> 
+        <br>
+        <div>
+          <strong><label for="birthday">Giorno di Nascita*:</label></strong>
+          <br>
+          <input type="date" id="birthday" name="birthday" required> 
+        </div>
+        <br>
+        <div>
+          <strong> <label for="phone">Inserisci il tuo numero:</label></strong>
+          <br>
+          <input type="tel" id="phone" name="phone"> 
+        </div>
+        <br>
+        <div>
+           <legend><strong>Quale abbonamento vuoi sottoscrivere?</strong></legend>
+           <ul>
+               <li>
+                   <label for="Abbonamento_1">
+                     <input type="radio" id="Abbonamento_1" name="Abbonamento" value="Free">
+                     Abbonamento Free
+                   </label>
+               </li>
+               <li>
+                    <label for="Abbonamento_2">
+                      <input type="radio" id="Abbonamento_2" name="Abbonamento" value="Abb_5_euro">
+                      Abbonamento da 5€
+                    </label>
+               </li>
+               <li>
+                    <label for="Abbonamento_2">
+                      <input type="radio" id="Abbonamento_2" name="Abbonamento" value="Abb_10_euro">
+                      Abbonamento da 10€
+                    </label>
+               </li>
+           </ul>
+        </div>
+        <div>
+            <strong><label for="Pro">Vuoi aderire ai vantaggi PRO?:</label></strong>
+            <br>
+            <input id="toggle-on" name="toggle" type="radio">
+            <label for="toggle-on">Si, lo voglio!</label>
+            <input id="toggle-off" name="toggle" type="radio">
+            <label for="toggle-off">No, tienilo per te</label>
+        </div>
+        <h2>Inserisci i dati di Pagamento:</h2>
+        <div>
+            <strong><label for="creditc">Inserisci il numero della tua carta*:</label></strong>
+            <br>
+            <input type="credit" id="cardc" name="creditc" required> 
+        </div>
+        <br>
+        <div>
+            <strong><label for="cvc">Inserisci il <i>Codice Verifica Carta</i>*:</label></strong>
+            <br>
+            <input type="cvc" id="cvcard" name="cvc" minlength="3" maxlength="3" required> 
+        </div>
+        <br>
+        <div>
+            <strong><label for="scad-carta">Giorno di Scadenza*:</label></strong>
+            <br>
+            <input type="date" id="scadenza" name="scad-carta" required> 
+          </div>
+          <br>
+        <div>
+          <strong><label for="ind-fatt">Indirizzo di fatturazione*:</label></strong>
+          <br>
+          <input type="text" id="ind-fatt" name="ind-fatt" required>
+        </div> 
+      </div>
+    </form>
+</body>
+</html>
