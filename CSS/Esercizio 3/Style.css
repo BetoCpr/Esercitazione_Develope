@@ -1,0 +1,26 @@
+li {
+    text-decoration: none;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    align-items: center;
+}
+
+.wrapper {
+    background-color: rgb(238, 198, 255);
+    width: 200px;
+    height: 100%;
+}
+
+.logo-image {
+    width: 100px;
+    height: auto;
+}
+
+.profile-image {
+    width: 150px;
+    height: auto;
+}

@@ -1,0 +1,42 @@
+body {
+	font-family: monospace;
+}
+
+#expand-toggle {
+	display: none;
+}
+
+#expand-toggle:checked + table .expandable {
+	visibility: visible;
+}
+
+#expand-toggle:checked~#expand-btn #mostra {
+	display: none;
+}
+
+#expand-toggle:not(:checked)~#expand-btn #nascondi {
+	display: none;
+}
+
+.expandable {
+	visibility: collapse;
+	color: #ff8888;
+}
+
+.expanded {
+	color: #88ff88;
+}
+
+#expand-btn {
+	display: inline-block;
+	margin-top: 12px;
+	padding: 6px 12px;
+	background-color: #ff8888;
+	border: 1px solid;
+	border-radius: 3px;
+	transition: all .3s;
+}
+
+#expand-btn:hover {
+	cursor: pointer;
+}
