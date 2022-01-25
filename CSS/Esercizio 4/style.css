@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "header header header header"
+    "plus minus multi divide"
+    "seven eight nine total"
+    "four five six total"
+    "one two three total"
+    "zero point AC total"; 
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-font {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.body-font {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(17, 17, 17);
+}
+
+.body-style {
+    background-color: rgb(198, 212, 212);
+    padding: 30px;
+}
+
+.first-row {
+    background-color: rgb(173, 178, 194);
+    padding: 30px;
+}
+
+.header {
+    justify-self: stretch;
+    grid-area: header;
+    text-align: right;
+    background-color: #3b3b3b;
+    padding: 20px;
+}
+
+.plus {
+    grid-area: plus;
+    text-align: center;
+    border-right: 3px solid #4c586e;
+    border-bottom: 3px solid #4c586e;
+}
+
+.minus { 
+    grid-area: minus; 
+    text-align: center;
+    border-right: 3px solid #4c586e;
+    border-bottom: 3px solid #4c586e;
+}
+
+.multi { 
+    grid-area: multi; 
+    text-align: center;
+    border-right: 3px solid #4c586e;
+    border-bottom: 3px solid #4c586e;
+}
+
+.divide { 
+    grid-area: divide;
+    text-align: center;
+    border-bottom: 3px solid #4c586e;
+}
+
+.seven { 
+    grid-area: seven; 
+    text-align: center;
+    border-right: 3px solid #4c586e;
+    border-bottom: 3px solid #4c586e;
+}
+
+.eight {
+     grid-area: eight; 
+     text-align: center;
+     border-right: 3px solid #4c586e;
+    border-bottom: 3px solid #4c586e;
+}
+
+.nine { 
+    grid-area: nine; 
+    text-align: center;
+    border-right: 3px solid #4c586e;
+    border-bottom: 3px solid #4c586e;
+}
+
+.total {
+     grid-area: total; 
+     background-color: rgb(250, 109, 121);
+     text-align: center;
+     padding-top: 120%;
+}
+
+.four { 
+    grid-area: four; 
+    text-align: center;
+    border-right: 3px solid #4c586e;
+    border-bottom: 3px solid #4c586e;
+}
+
+.five { 
+    grid-area: five; 
+    text-align: center;
+    border-right: 3px solid #4c586e;
+    border-bottom: 3px solid #4c586e;
+}
+
+.six { 
+    grid-area: six; 
+    text-align: center;
+    border-right: 3px solid #4c586e;
+    border-bottom: 3px solid #4c586e;
+}
+
+.one { 
+    grid-area: one; 
+    text-align: center;
+    border-right: 3px solid #4c586e;
+    border-bottom: 3px solid #4c586e;
+}
+
+.two { 
+    grid-area: two; 
+    text-align: center;
+    border-right: 3px solid #4c586e;
+    border-bottom: 3px solid #4c586e;
+}
+
+.three {
+     grid-area: three; 
+     text-align: center;
+     border-right: 3px solid #4c586e;
+    border-bottom: 3px solid #4c586e;
+}
+
+.zero { 
+    grid-area: zero; 
+    text-align: center;
+    border-right: 3px solid #4c586e;
+}
+
+.point { 
+    grid-area: point; 
+    text-align: center;
+    border-right: 3px solid #4c586e;
+}
+
+.AC { 
+    grid-area: AC; 
+    text-align: center;
+    border-right: 3px solid #4c586e;
+}
